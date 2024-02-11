@@ -1,0 +1,241 @@
+@media only screen and (max-width:1400px) {
+    .MainText {
+        .MainTextHead {
+            font-size: 35px;
+        }
+        .flex-container-1 {
+            width: 95%;
+            .flex-elements-2 {
+                .ServicesFrame {
+                    .ServicesHead {
+                        font-size: 20px;
+                    }
+                    .ServicesText {
+                        font-size: 15px;
+                    }
+                }
+            }
+            .flex-elements-3 {
+                .SkillsFrame {
+                    .SkillsHead {
+                        font-size: 20px;
+                    }
+                    .SkillsText {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .MotivationText {
+        h1 {
+            font-size: 100px;
+        }
+    }
+    .NavBarHeader {
+        .nav {
+            li {
+                margin: 0;
+            }
+        }
+    }
+    .MainText {
+        .MainTextHead {
+            font-size: 30px;
+        }
+        .flex-container-1 {
+            width: 95%;
+            .flex-elements-2 {
+                .ServicesFrame {
+                    .ServicesHead {
+                        font-size: 17px;
+                    }
+                    .ServicesText {
+                        font-size: 13px;
+                    }
+                }
+            }
+            .flex-elements-3 {
+                .SkillsFrame {
+                    .SkillsHead {
+                        font-size: 17px;
+                    }
+                    .SkillsText {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+    form {
+        .InputArea {
+            width: 40%;
+        }
+        .TextInput {
+            width: 40%;
+        }
+        .ButtonB {
+            width: 20%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .MotivationText {
+        h1 {
+            font-size: 80px;
+        }
+    }
+    .NavBarHeader {
+        .nav {
+            .NavListBaseSetting {
+                .NavBarOptions {
+                    .NavBarItem {
+                        padding: 8px 10px;
+                    }
+                }
+            }
+        }
+    }
+    .MainText {
+        .MainTextHead {
+            font-size: 30px;
+        }
+        .flex-container-1 {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            .flex-elements-2 {
+                display: inline-flex;
+                width: 47%;
+                .ServicesFrame {
+                    .ServicesHead {
+                        font-size: 17px;
+                    }
+                    .ServicesText {
+                        font-size: 13px;
+                    }
+                }
+            }
+            .flex-elements-3 {
+                display: inline-block;
+                width: 49%;
+                align-items: center;
+            }
+        }
+    }
+    form {
+        .InputArea {
+            width: 50%;
+        }
+        .TextInput {
+            width: 50%;
+        }
+        .ButtonB {
+            width: 30%;
+        }
+    }
+}
+
+@media only screen and (max-width:750px) {
+    .NavBarHeader {
+        .nav {
+            li {
+                padding: 5px;
+            }
+            .NavListBaseSetting {
+                .LogoImg {
+                    display: block;
+                    max-width: 10%;
+                    padding: 1%;
+                    height: auto;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    .MotivationText {
+        h1 {
+            font-size: 70px;
+        }
+    }
+    .MainText {
+        .flex-container {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+            .flex-elements {//About me
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                img { 
+                    width: 80%;
+                }
+                .personal-info {
+                    div {
+                        margin: 0 auto;
+                        text-align: center;
+                    }
+                } //End about me
+            }
+            .flex-elements-4 {//Projects
+                display: block;
+                width: 90%;
+                margin: 1% auto;
+                img {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+                } //End Projects
+            }
+        }
+        form {
+            .InputArea {
+                width: 60%;
+            }
+            .TextInput {
+                width: 60%;
+            }
+            .ButtonB {
+                width: 40%;
+            }
+        }
+    }
+
+@media only screen and (max-width:600px) {
+    .NavBarHeader {
+        .nav {
+            li {
+                padding: 2px;
+                a {
+                    font-size: 10px;
+                }
+            }
+            .NavListBaseSetting {
+                .LogoImg {
+                    display: block;
+                    max-width: 15%;
+                    padding: 1%;
+                    height: auto;
+                    margin: 0 auto;
+                }
+                .NavBarOptions {
+                    .NavBarItem {
+                        padding: 2px;
+                        border: 0.1px solid black;
+                    }
+                }
+            }
+        }
+    }
+    .MotivationText {
+        h1 {
+            font-size: 50px;
+        }
+    }
+}

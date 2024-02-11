@@ -1,0 +1,651 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css2?family=Oswald&display=swap);
+@keyframes FadeInLoad {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes RLSideLoad {
+  0% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes BottomTopLoad {
+  0% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes DropDownLoad {
+  0% {
+    transform: scaleY(10%);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes HoverZoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+@keyframes FlexElementHover {
+  0% {
+    transform: scale(1);
+    box-shadow: 10px 5px 5px #7a7a7a;
+  }
+  100% {
+    box-shadow: 0px 15px 15px #7a7a7a;
+    transform: scale(1.02);
+  }
+}
+@keyframes BGMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes Anim {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(-45deg, #2a2a2a, #7c6767, #394e32, #327070, #2b1944, #634c5d, #9c9c9c);
+  background-size: 400% 400%;
+  animation: BGMove 15s ease infinite;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  font-family: "Montserrat";
+  margin: 0px;
+  animation: FadeInLoad ease 1s;
+  animation-fill-mode: both;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#Parallax {
+  background: linear-gradient(-45deg, #2a2a2a, #7c6767, #394e32, #327070, #2b1944, #634c5d, #9c9c9c);
+  background-size: 400% 400%;
+  animation: BGMove 15s ease infinite;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 110vh;
+  position: fixed;
+  z-index: -1;
+}
+
+.NavBarHeader {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  animation: RLSideLoad ease 1000ms;
+  animation-fill-mode: both;
+  border-bottom: 2px solid black;
+}
+.NavBarHeader .nav ul {
+  text-align: center;
+  list-style: none;
+  background-color: #fff;
+  color: #000;
+}
+.NavBarHeader .nav li {
+  display: inline-block;
+  margin: 5px 10px 5px 10px;
+  padding: 10px;
+}
+.NavBarHeader .nav .NavListBaseSetting .LogoImg {
+  position: relative;
+  display: inline-block;
+  max-width: 5%;
+  padding: 1%;
+  height: auto;
+}
+.NavBarHeader .nav .NavListBaseSetting .NavBarOptions .NavBarItem {
+  padding: 8px 25px;
+}
+.NavBarHeader .nav .NavListBaseSetting .NavBarOptions .NavBarItem {
+  border: 2.2px solid transparent;
+  border-radius: 5px;
+  border-color: #000;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.03cm;
+  text-transform: uppercase;
+}
+.NavBarHeader .nav .NavListBaseSetting .NavBarOptions .NavBarItem:hover {
+  animation: HoverZoom ease 250ms;
+  animation-fill-mode: both;
+  background-color: #c2c2c2;
+  color: #000;
+}
+
+.MotivationText {
+  margin: 0px auto;
+  animation: BottomTopLoad ease 700ms;
+  animation-fill-mode: both;
+}
+.MotivationText h1 {
+  text-align: center;
+  font-family: Oswald;
+  color: #fff;
+  font-size: 130px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.MainText {
+  position: sticky;
+  background-color: #fff;
+  border-top: 2px solid black;
+  animation: BottomTopLoad ease 1000ms;
+  animation-fill-mode: both;
+}
+.MainText .Shadow-Container-No {
+  background-color: #e6e6e6;
+}
+.MainText .MainTextHead {
+  margin: 1% auto;
+  text-align: center;
+  font-size: 50px;
+}
+.MainText .MainTextHead span {
+  animation: Anim 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+.MainText .flex-container {
+  display: flex;
+  justify-content: space-between !important;
+  flex-direction: row;
+  width: 85%;
+  margin: 1% auto;
+}
+.MainText .flex-container .flex-elements, .MainText .flex-container .flex-container-1 .flex-elements-2, .MainText .flex-container-1 .flex-container .flex-elements-2, .MainText .flex-container .flex-elements-4 {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+.MainText .flex-container .flex-elements img, .MainText .flex-container .flex-container-1 .flex-elements-2 img, .MainText .flex-container-1 .flex-container .flex-elements-2 img, .MainText .flex-container .flex-elements-4 img {
+  width: 80%;
+}
+.MainText .flex-container .flex-elements .personal-info, .MainText .flex-container .flex-container-1 .flex-elements-2 .personal-info, .MainText .flex-container-1 .flex-container .flex-elements-2 .personal-info, .MainText .flex-container .flex-elements-4 .personal-info {
+  justify-content: center;
+}
+.MainText .flex-container .flex-elements .personal-info h3, .MainText .flex-container .flex-container-1 .flex-elements-2 .personal-info h3, .MainText .flex-container-1 .flex-container .flex-elements-2 .personal-info h3, .MainText .flex-container .flex-elements-4 .personal-info h3 {
+  font-size: 2rem;
+}
+.MainText .flex-container .flex-elements .personal-info div p, .MainText .flex-container .flex-container-1 .flex-elements-2 .personal-info div p, .MainText .flex-container-1 .flex-container .flex-elements-2 .personal-info div p, .MainText .flex-container .flex-elements-4 .personal-info div p {
+  line-height: 30px;
+}
+.MainText .flex-container .flex-elements-4 img {
+  width: 90%;
+  margin: 0 auto;
+}
+.MainText .flex-container .flex-elements-4:hover {
+  animation: HoverZoom ease 500ms;
+  animation-fill-mode: both;
+}
+.MainText .flex-container .flex-elements-4 .ProjectsFrame {
+  background-color: #fafafa;
+  border: 2px solid black;
+  border-radius: 7%;
+  margin: 1%;
+  box-shadow: 10px 5px 5px #a6a6a6;
+}
+.MainText .flex-container .flex-elements-4 .ProjectsFrame .ProjectsHead {
+  font-size: 28px;
+  margin: 5%;
+  padding: 5%;
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+  background: linear-gradient(-154deg, #000, #5d5d5d, #cdcdcd);
+  background-size: 400% 400%;
+  animation: BGMove 10s ease infinite;
+}
+.MainText .flex-container .flex-elements-4 .ProjectsFrame .ProjectsText {
+  margin: 5%;
+  font-size: 18px;
+  display: block;
+  justify-content: center;
+}
+.MainText .flex-container-1 {
+  display: flex;
+  justify-content: space-between !important;
+  flex-direction: row;
+  width: 85%;
+  margin: 1% auto;
+}
+.MainText .flex-container-1 .flex-elements-2 {
+  margin-bottom: 0 !important;
+  flex-basis: 100%;
+}
+.MainText .flex-container-1 .flex-elements-2 .ServicesFrame {
+  background-color: #fafafa;
+  border: 2px solid black;
+  border-radius: 7%;
+  margin: 1%;
+  box-shadow: 10px 5px 5px #a6a6a6;
+}
+.MainText .flex-container-1 .flex-elements-2 .ServicesFrame .ServicesHead {
+  font-size: 28px;
+  margin: 5%;
+  padding: 5%;
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+  background: linear-gradient(-154deg, #000, #5d5d5d, #cdcdcd);
+  background-size: 400% 400%;
+  animation: BGMove 10s ease infinite;
+}
+.MainText .flex-container-1 .flex-elements-2 .ServicesFrame .ServicesText {
+  margin: 5%;
+  font-size: 18px;
+  display: block;
+  justify-content: center;
+}
+.MainText .flex-container-1 .flex-elements-2 .ServicesFrame:hover {
+  animation: HoverZoom 1s ease;
+  animation-fill-mode: both;
+}
+.MainText .flex-container-1 .flex-elements-3 {
+  align-items: center;
+  display: block;
+  width: 100%;
+  margin-top: 1%;
+}
+.MainText .flex-container-1 .flex-elements-3 .SkillsFrame {
+  width: 100%;
+}
+.MainText .flex-container-1 .flex-elements-3 .SkillsFrame label i {
+  font-size: 3rem;
+  text-align: center;
+}
+.MainText .flex-container-1 .flex-elements-3 .SkillsFrame:hover {
+  color: #232323;
+  animation: HoverZoom 500ms ease;
+  animation-fill-mode: both;
+}
+.MainText .flex-container-1 .flex-elements-3 .SkillsFrame .Progress {
+  color: white;
+  font-weight: 900;
+}
+.MainText .flex-container-1 .flex-elements-3 .SkillsFrame #ProgressHTML {
+  display: block;
+  margin: 5% auto 0%;
+  width: 70%;
+  height: 20px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(42, 42, 42) 80%, rgb(255, 255, 255) 100%);
+}
+.MainText .flex-container-1 .flex-elements-3 .SkillsFrame #ProgressCSS {
+  display: block;
+  margin: 5% auto 0%;
+  width: 70%;
+  height: 20px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(42, 42, 42) 70%, rgb(255, 255, 255) 100%);
+}
+.MainText .flex-container-1 .flex-elements-3 .SkillsFrame #ProgressJS {
+  display: block;
+  margin: 5% auto 0%;
+  width: 70%;
+  height: 20px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(42, 42, 42) 30%, rgb(255, 255, 255) 100%);
+}
+.MainText .flex-container-1 .flex-elements-3 .SkillsFrame #ProgressBS {
+  display: block;
+  margin: 5% auto 0%;
+  width: 70%;
+  height: 20px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(42, 42, 42) 50%, rgb(255, 255, 255) 100%);
+}
+
+form .InputArea {
+  width: 30%;
+  height: 30px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid #424242;
+}
+form .TextInput {
+  width: 30%;
+  height: 100px;
+  resize: none;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid #424242;
+}
+form .InputText {
+  font-size: 20px;
+}
+form .CheckInputText {
+  font-size: 18px;
+}
+form .ButtonB {
+  margin-right: 2%;
+  margin-left: 2%;
+  border: 2.2px solid transparent;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  background-color: #000;
+  border-radius: 10px;
+  width: 15%;
+  height: 50px;
+}
+form .ButtonB:hover {
+  animation: HoverZoom ease 500ms;
+  animation-fill-mode: both;
+  background: #1a1a1a;
+}
+
+.MainFooter {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  background-color: #000;
+  animation: BottomTopLoad ease 700ms;
+  animation-fill-mode: both;
+}
+.MainFooter .MainFooterContent {
+  display: inline-block;
+  align-content: center;
+  vertical-align: middle;
+}
+.MainFooter .MainFooterContent .MainFooterSection {
+  display: table-cell;
+  text-align: left;
+  padding-top: 30px;
+  padding-right: 30px;
+  vertical-align: top;
+}
+.MainFooter .MainFooterContent .MainFooterSection .MainFooterList {
+  background-color: transparent;
+}
+.MainFooter .MainFooterContent .MainFooterSection .MainFooterList a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.MainFooter .MainFooterContent .MainFooterSection .MainFooterList a:hover {
+  opacity: 0.6;
+  text-decoration: none;
+  position: relative;
+}
+.MainFooter .MainFooterContent .MainFooterSection .MainFooterList .MainFooterItem a {
+  display: inline-block;
+}
+.MainFooter .MainFooterContent .MainFooterSection .MainFooterList .MainFooterItem .fa-brands {
+  padding-left: 20px;
+  font-size: 32px;
+}
+.MainFooter .Copyright {
+  margin: 0px auto;
+  padding-top: 15px;
+  color: #fff;
+  bottom: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+hr {
+  border: 0.1px solid transparent;
+  border-color: #000;
+  height: 1%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.Spacer10 {
+  height: 10px;
+}
+
+.Spacer25 {
+  height: 25px;
+}
+
+.Spacer50 {
+  height: 50px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.circular-progress {
+  width: var(--progress-bar-width);
+  height: var(--progress-bar-height);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-circle {
+  position: absolute;
+  width: calc(var(--progress-bar-width) - 30px);
+  height: calc(var(--progress-bar-height) - 30px);
+  border-radius: 50%;
+  background-color: lightgrey;
+}
+
+.percentage {
+  position: relative;
+  font-size: var(--font-size);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+@media only screen and (max-width: 1400px) {
+  .MainText .MainTextHead {
+    font-size: 35px;
+  }
+  .MainText .flex-container-1 {
+    width: 95%;
+  }
+  .MainText .flex-container-1 .flex-elements-2 .ServicesFrame .ServicesHead {
+    font-size: 20px;
+  }
+  .MainText .flex-container-1 .flex-elements-2 .ServicesFrame .ServicesText {
+    font-size: 15px;
+  }
+  .MainText .flex-container-1 .flex-elements-3 .SkillsFrame .SkillsHead {
+    font-size: 20px;
+  }
+  .MainText .flex-container-1 .flex-elements-3 .SkillsFrame .SkillsText {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .MotivationText h1 {
+    font-size: 100px;
+  }
+  .NavBarHeader .nav li {
+    margin: 0;
+  }
+  .MainText .MainTextHead {
+    font-size: 30px;
+  }
+  .MainText .flex-container-1 {
+    width: 95%;
+  }
+  .MainText .flex-container-1 .flex-elements-2 .ServicesFrame .ServicesHead {
+    font-size: 17px;
+  }
+  .MainText .flex-container-1 .flex-elements-2 .ServicesFrame .ServicesText {
+    font-size: 13px;
+  }
+  .MainText .flex-container-1 .flex-elements-3 .SkillsFrame .SkillsHead {
+    font-size: 17px;
+  }
+  .MainText .flex-container-1 .flex-elements-3 .SkillsFrame .SkillsText {
+    font-size: 13px;
+  }
+  form .InputArea {
+    width: 40%;
+  }
+  form .TextInput {
+    width: 40%;
+  }
+  form .ButtonB {
+    width: 20%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .MotivationText h1 {
+    font-size: 80px;
+  }
+  .NavBarHeader .nav .NavListBaseSetting .NavBarOptions .NavBarItem {
+    padding: 8px 10px;
+  }
+  .MainText .MainTextHead {
+    font-size: 30px;
+  }
+  .MainText .flex-container-1 {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .MainText .flex-container-1 .flex-elements-2 {
+    display: inline-flex;
+    width: 47%;
+  }
+  .MainText .flex-container-1 .flex-elements-2 .ServicesFrame .ServicesHead {
+    font-size: 17px;
+  }
+  .MainText .flex-container-1 .flex-elements-2 .ServicesFrame .ServicesText {
+    font-size: 13px;
+  }
+  .MainText .flex-container-1 .flex-elements-3 {
+    display: inline-block;
+    width: 49%;
+    align-items: center;
+  }
+  form .InputArea {
+    width: 50%;
+  }
+  form .TextInput {
+    width: 50%;
+  }
+  form .ButtonB {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .NavBarHeader .nav li {
+    padding: 5px;
+  }
+  .NavBarHeader .nav .NavListBaseSetting .LogoImg {
+    display: block;
+    max-width: 10%;
+    padding: 1%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .MotivationText h1 {
+    font-size: 70px;
+  }
+  .MainText .flex-container {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .MainText .flex-container .flex-elements, .MainText .flex-container .flex-elements-4, .MainText .flex-container .flex-container-1 .flex-elements-2, .MainText .flex-container-1 .flex-container .flex-elements-2 {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .MainText .flex-container .flex-elements img, .MainText .flex-container .flex-elements-4 img, .MainText .flex-container .flex-container-1 .flex-elements-2 img, .MainText .flex-container-1 .flex-container .flex-elements-2 img {
+    width: 80%;
+  }
+  .MainText .flex-container .flex-elements .personal-info div, .MainText .flex-container .flex-elements-4 .personal-info div, .MainText .flex-container .flex-container-1 .flex-elements-2 .personal-info div, .MainText .flex-container-1 .flex-container .flex-elements-2 .personal-info div {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .MainText .flex-container .flex-elements-4 {
+    display: block;
+    width: 90%;
+    margin: 1% auto;
+  }
+  .MainText .flex-container .flex-elements-4 img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  form .InputArea {
+    width: 60%;
+  }
+  form .TextInput {
+    width: 60%;
+  }
+  form .ButtonB {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .NavBarHeader .nav li {
+    padding: 2px;
+  }
+  .NavBarHeader .nav li a {
+    font-size: 10px;
+  }
+  .NavBarHeader .nav .NavListBaseSetting .LogoImg {
+    display: block;
+    max-width: 15%;
+    padding: 1%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .NavBarHeader .nav .NavListBaseSetting .NavBarOptions .NavBarItem {
+    padding: 2px;
+    border: 0.1px solid black;
+  }
+  .MotivationText h1 {
+    font-size: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */

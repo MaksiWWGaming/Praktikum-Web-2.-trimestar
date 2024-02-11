@@ -1,0 +1,77 @@
+@keyframes FadeInLoad{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+@keyframes RLSideLoad{
+    0% {
+        transform: translateY(-25px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes BottomTopLoad{
+    0% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes DropDownLoad{
+    0% {
+        transform: scaleY(10%);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes HoverZoom{
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes FlexElementHover {
+    0% {
+        transform: scale(1);
+        box-shadow: 10px 5px 5px #7a7a7a;
+    }
+    100% {
+        box-shadow: 0px 15px 15px #7a7a7a;
+        transform: scale(1.02);
+    }
+}
+
+@keyframes BGMove {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes Anim {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+}
+

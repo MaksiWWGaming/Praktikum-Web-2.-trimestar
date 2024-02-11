@@ -1,0 +1,43 @@
+@mixin bgparallax {
+    background: linear-gradient(-45deg, #2a2a2a, #7c6767, #394e32, #327070, #2b1944, #634c5d, #9c9c9c );
+	background-size: 400% 400%;
+	animation: BGMove 15s ease infinite;
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+@mixin frames {
+    background-color: #fafafa;
+    border: $twopxborder;
+    border-radius: 7%;
+    margin: 1%;
+    box-shadow: 10px 5px 5px #a6a6a6;
+}
+
+@mixin head {
+    font-size: 28px;
+    margin: 5%;
+    padding: 5%;
+    text-align: center;
+    border-radius: 10px;
+    color: $bgcolor;
+    background: linear-gradient(-154deg, #000, #5d5d5d, #cdcdcd);
+	background-size: 400% 400%;
+	animation: BGMove 10s ease infinite;
+}
+
+@mixin texts {
+    margin: 5%;
+    font-size: 18px;
+    display: block;
+    justify-content: center;
+}
+
+@mixin Progress {
+    display: block;
+    margin: 5% auto 0%;
+    width: 70%;
+    height: 20px;
+    border-radius: 50px;
+}
